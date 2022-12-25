@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login</title>
+        <link rel="stylesheet" href="css/login.css">
+        
+        
+    </head>
+    <body>
+        
+        
+        <!-- <div id = "main"> -->
+            <div id ="header">
+                <img src="Images\mortarboard.png">
+                <ul>
+                    <a href="index.html"> <li  class="other-page"  >Home</li>  </a>
+                    <a href ="about.html"> <li class = "other-page"> About Us</li> </a>
+                    <a href ="contact.html"> <li class = "other-page"> Contact Us</li> </a>
+                    <a href =login.html> <li class = "current-page"> Log In</li> </a>
+                </ul>
+            </div>
+
+            <div id ="form">
+                <form method="post" name="loginform" onsubmit = "return validated()" action="index.html">
+                <fieldset>
+                    <legend> Welcome </legend>
+                    <img src="Images\sign-in.png"> <br> <br> <br>
+                    <input name="email" type="email" placeholder="Email">
+                    <p id="email_error"> Please fill your email!</p>
+                    <input name ="password" type="password" placeholder="Password">
+                    <p id="password_error"> Password must contain at least 6 characters</p>
+                    <button type="submit"> Login</button>
+                    <p class ="form-text"> Don't have an account? <a href="register.html"> Sign up! </a> </p>
+
+
+
+                </fieldset>
+                </form>
+                <script src="js/login.js"></script>
+
+
+
+            </div>
+
+
+            <!-- </div> -->
+    </body>
+</html>
